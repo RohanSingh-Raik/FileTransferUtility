@@ -52,6 +52,8 @@ public class FTPService : IDisposable
                 Console.WriteLine($"Uploading: {fileName}");
 
                 _ftpClient?.UploadFile(filePath, targetPath);
+
+                Console.WriteLine($"Uploaded: {fileName}");
             }
             
         }
