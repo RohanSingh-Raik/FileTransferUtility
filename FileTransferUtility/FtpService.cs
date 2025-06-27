@@ -47,7 +47,10 @@ public class FTPService : IDisposable
         {
             foreach (string filePath in Directory.GetFiles(inputFolderPath))
             {
-              _ftpClient?.UploadFile(filePath, targetFolderPath);
+                string fileName = Path.GetFileName(filePath);
+                string targetPath = Path.Combine(targetFolderPath, fileName).Replace("\\", "/");
+
+                _ftpClient?.UploadFile(filePath, targetPath);
             }
             
         }

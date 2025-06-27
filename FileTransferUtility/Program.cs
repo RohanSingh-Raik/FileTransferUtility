@@ -1,10 +1,9 @@
 ﻿
-
-string host = "ftp.example.com";
-string username = "your-ftp-username";
-string password = "your-ftp-password";
-string localFolderPath = @"C:\MyLocalFiles";
-string remoteFolderPath = "/remote/target/folder";
+string host = "ftp://127.0.0.1";
+string username = "FTPTest";
+string password = "test";
+string localFolderPath = @"C:\Users\RohanSingh\Desktop\FDA forms";
+string remoteFolderPath = "/OUTFOLDER";
 
 try
 {
