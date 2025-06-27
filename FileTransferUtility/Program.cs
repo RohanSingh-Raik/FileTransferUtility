@@ -11,6 +11,8 @@ try
     {
         ftpService.UploadFiles(localFolderPath, remoteFolderPath);
         Console.WriteLine("Files uploaded successfully.");
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
     }
 }
 catch (Exception ex)
